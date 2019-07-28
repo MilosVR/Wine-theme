@@ -1,0 +1,209 @@
+@media only screen and (max-width: 1280px) {
+  .navbar .navbar_inner {
+    width: auto;
+    position: relative; }
+  .navbar .nav_links {
+    display: none !important; }
+  .navbar .collapse_menu {
+    padding-top: 110px;
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: #333645;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+    .navbar .collapse_menu ul {
+      background: #292b37;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0; }
+      .navbar .collapse_menu ul li {
+        width: 100%;
+        padding: 2rem;
+        border-bottom: 1px dashed #d3d3d3; }
+        .navbar .collapse_menu ul li:hover {
+          background: #333645; }
+          .navbar .collapse_menu ul li:hover a {
+            color: #e19503 !important; }
+        .navbar .collapse_menu ul li a {
+          width: 100%;
+          padding: 2rem;
+          color: #fff;
+          transition: all .5s ease-in-out; }
+        .navbar .collapse_menu ul li:nth-child(5) {
+          background: #e19503; }
+          .navbar .collapse_menu ul li:nth-child(5):hover {
+            background: #333645; }
+            .navbar .collapse_menu ul li:nth-child(5):hover a {
+              color: #e19503 !important; }
+      .navbar .collapse_menu ul button {
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        width: 10rem !important;
+        background: #e19503; }
+  .navbar .hamburger_menu {
+    display: flex;
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-right: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
+    .navbar .hamburger_menu.colapse span:nth-child(1) {
+      margin-top: 18px;
+      transform: rotate(45deg);
+      transition: all .5s ease-in-out; }
+    .navbar .hamburger_menu.colapse span:nth-child(2) {
+      opacity: 0;
+      transition: all .3s ease-in-out; }
+    .navbar .hamburger_menu.colapse span:nth-child(3) {
+      margin-left: 6px;
+      margin-top: -28px;
+      transform: rotate(-45deg);
+      transition: all .5s ease-in-out; }
+    .navbar .hamburger_menu span {
+      width: 100%;
+      height: .3rem;
+      background: #d3d3d3;
+      margin: .4rem; }
+      .navbar .hamburger_menu span:nth-child(1) {
+        width: 80%;
+        transition: all .5s ease-in-out; }
+      .navbar .hamburger_menu span:nth-child(2) {
+        opacity: 1;
+        transition: all .3s ease-in-out; }
+      .navbar .hamburger_menu span:nth-child(3) {
+        width: 80%;
+        transition: all .5s ease-in-out; }
+  .slide_one div {
+    padding: 2rem; }
+    .slide_one div p {
+      width: 100%;
+      font-size: 1.4rem;
+      padding: 2rem;
+      display: block; }
+    .slide_one div h1 {
+      font-size: 2rem; }
+    .slide_one div .thunder_icon {
+      position: relative;
+      width: auto;
+      height: auto; }
+    .slide_one div .grapes_icon {
+      width: 2rem;
+      height: 2rem; }
+  .contact .contact_inner {
+    width: auto; }
+  .about .about_headline {
+    width: auto; }
+  .about .about_section {
+    display: block;
+    width: auto; }
+  .electrical_servies .electrical_services_headline {
+    width: auto;
+    padding: 2rem; }
+  .electrical_servies .electrical_services_body_grid {
+    width: auto; }
+  .works_and_projects .works_and_projects_headline {
+    width: auto;
+    padding: 5rem 2rem 2rem 2rem; }
+  .grid-container {
+    width: 100%; }
+  .testimonials {
+    width: auto; }
+    .testimonials h2 {
+      width: auto; }
+    .testimonials .testimonials_slider {
+      width: 100%; }
+      .testimonials .testimonials_slider div {
+        width: 100% !important;
+        height: auto;
+        padding: 2rem; }
+        .testimonials .testimonials_slider div p {
+          width: auto !important; }
+  .blogs .blogs_headline {
+    width: auto;
+    padding: 2rem; }
+  .blogs .blog_grid {
+    width: auto;
+    padding: 1rem; }
+  .subscribe .subscribe_headline {
+    text-align: center;
+    padding-bottom: 2rem; }
+    .subscribe .subscribe_headline h2 {
+      text-align: center; }
+  .subscribe div {
+    width: 100%;
+    flex-wrap: wrap; }
+  .subscribe .subscribe_form form {
+    width: 100% !important;
+    justify-content: center !important; }
+    .subscribe .subscribe_form form input {
+      width: auto !important; }
+  .footer .footer_wraper {
+    width: 100%; } }
+
+@media only screen and (max-width: 900px) {
+  .electrical_services_body_grid {
+    grid-template-columns: repeat(2, 1fr) !important; }
+  .grid-container {
+    grid-template-columns: 1fr !important;
+    grid-template-areas: 'project1' 'project2' 'project3' 'project4' 'project5' 'project6'; }
+    .grid-container div {
+      height: 350px; }
+  .blog_grid {
+    grid-template-columns: repeat(2, 1fr) !important; }
+  .footer_wraper {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr) !important;
+    height: 600px !important;
+    grid-template-areas: 'company company' 'services acr';
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 20px; }
+    .footer_wraper div {
+      height: 200px; }
+  .subscribe {
+    margin-bottom: 600px; }
+  .company_info {
+    margin-bottom: 50px;
+    grid-area: company;
+    padding: 2rem; }
+    .company_info ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+    .company_info .social_icons {
+      display: none; }
+  .our_services {
+    grid-area: services; }
+  .accreditations {
+    grid-area: acr; } }
+
+@media only screen and (max-width: 700px) {
+  .subscribe_form form {
+    grid-template-columns: 1fr !important; }
+    .subscribe_form form input {
+      width: auto !important; } }
+
+@media only screen and (max-width: 600px) {
+  .electrical_services_body_grid {
+    grid-template-columns: 1fr !important; }
+  .blog_grid {
+    grid-template-columns: 1fr !important; }
+  .footer_wraper {
+    grid-template-columns: 1fr !important;
+    grid-template-areas: 'company' 'services' 'acr';
+    margin-bottom: 0; }
+  .accreditations {
+    display: none !important; } }
+
+@media only screen and (max-width: 500px) {
+  .slider_inner p {
+    display: none !important; } }
