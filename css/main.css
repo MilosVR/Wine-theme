@@ -143,7 +143,8 @@ body {
         .slider .slider_inner .slide_one div img {
           width: 12rem; }
         .slider .slider_inner .slide_one div .grapes_icon {
-          background: url(/assets/grape.png) center center no-repeat/cover;
+          background: url(/assets/grape.png) center center no-repeat;
+          background-size: 100% 100%;
           width: 3rem;
           height: 3rem; }
         .slider .slider_inner .slide_one div .thunder_icon {
@@ -208,7 +209,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 4rem;
+  padding: 2rem;
   position: relative; }
   .about::before {
     content: '';
@@ -395,6 +396,18 @@ body {
     height: 200px; }
     .grid-container div:nth-child(1), .grid-container div:nth-child(3), .grid-container div:nth-child(5), .grid-container div:nth-child(6) {
       height: 425px; }
+    .grid-container div::after {
+      content: '';
+      background: url(/assets/zoom.png);
+      background-size: 3rem 3rem;
+      position: absolute;
+      width: 3rem;
+      height: 3rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: all .5s ease-in-out; }
     .grid-container div::before {
       content: '';
       position: absolute;
@@ -407,6 +420,8 @@ body {
     .grid-container div:hover::before {
       transition: all .5s ease-in-out;
       height: 100%; }
+    .grid-container div:hover::after {
+      opacity: 1; }
     .grid-container div img {
       width: 100%;
       height: 100%;

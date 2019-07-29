@@ -165,7 +165,8 @@ body{
                     width: 12rem;
                 }
                 .grapes_icon{
-                    background: url(/assets/grape.png) center center no-repeat/cover;
+                    background: url(/assets/grape.png) center center no-repeat;
+                    background-size: 100% 100%;
                     width: 3rem;
                     height: 3rem;
                 }
@@ -246,7 +247,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 4rem;
+    padding: 2rem;
     position: relative;
     &::before{
         content:'';
@@ -468,6 +469,19 @@ body{
         &:nth-child(1), &:nth-child(3), &:nth-child(5), &:nth-child(6){
             height: 425px;
         }
+        &::after{
+            content: '';
+            background: url(/assets/zoom.png);
+            background-size: 3rem 3rem;
+            position: absolute;
+            width: 3rem;
+            height: 3rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: all .5s ease-in-out;
+        }
         &::before{
             content: '';
             position: absolute;
@@ -481,6 +495,9 @@ body{
         &:hover::before{
             transition: all .5s ease-in-out;
             height: 100%;
+        }
+        &:hover::after{
+            opacity: 1;
         }
      img{
          width: 100%;

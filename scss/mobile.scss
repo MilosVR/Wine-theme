@@ -8,7 +8,7 @@
             display: none !important;
         }
         .collapse_menu{
-           padding-top: 110px;
+           padding-top: 7rem;
            position: absolute; 
            display: none;
            width: 100%;
@@ -73,7 +73,7 @@
             &.colapse{
                 span{
                     &:nth-child(1){
-                        margin-top: 18px;
+                        margin-top: 17px;
                         transform: rotate(45deg);
                         transition: all .5s ease-in-out;
                     }
@@ -221,6 +221,10 @@
     }
   }
   @media only screen and (max-width: 900px) {
+      
+      .about{
+          padding: 0rem !important;
+      }
     .electrical_services_body_grid{
         grid-template-columns: repeat(2, 1fr) !important;
     }
@@ -289,6 +293,9 @@
     }
   }
   @media only screen and (max-width: 600px) {
+    h1, h2{
+        font-size: 1.7rem !important;
+      }  
     .electrical_services_body_grid{
         grid-template-columns: 1fr !important;
     }
@@ -307,12 +314,121 @@
     .accreditations{
         display: none !important;   
     }
+    .grid-container{
+        padding: 1rem 1rem 12rem 1rem;
+        div{
+            border-radius: 1rem !important;
+        }
+    }
   }
   
   @media only screen and (max-width: 500px) {
     .slider_inner{
+        div{
+            margin-top: 1rem;
+        }
+        h1{
+            margin: 1rem 0 0 0;
+        }
         p{
-            display: none !important;
+            font-size: 1.1rem !important;
+            position: relative;
+            height: 190px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            &::after{
+                content:'...';
+                position: absolute;
+                bottom: .2rem;
+                right: 1.8rem;
+            }
+        }
+    }
+    .contact{
+        div{
+            display: block;
+            border-bottom: 1px solid #d3d3d3;
+            padding: 1rem;
+        }
+        .contact_inner{
+            display: block;
+        }
+    }
+    .electrical_services_head{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem !important;
+        flex-direction: column;
+        width: 100%;
+        
+        p{
+            width: 100%;
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 1rem auto;
+            padding: 1rem;
+            border: 1px solid #d3d3d3;
+            border-radius: 5rem;
+        }
+        button{
+            color: #d3d3d3;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+        }
+    }
+    .company_info{
+        margin-bottom: 0 !important;
+        margin-top: 50px;
+        display: block !important;
+    }
+    .our_services{ 
+        display: none !important;
+    }
+    .footer_wraper{
+        div{
+            padding-top: 30px;
+            height: 150px;
+        }
+    }
+    .accreditations{
+        display: block !important; 
+        margin-top: 100px;
+        text-align: center;
+        font-size: 1.1rem !important;
+        img{
+            height: 4rem;
+        }
+    }
+    .navbar_inner{
+        height: 4rem !important;
+    }
+    .collapse_menu{
+        padding-top: 5rem !important;
+    }
+    .hamburger_menu{
+        height: 3rem !important;
+        width: 2.5rem !important;
+        margin-right: 1.5rem;
+        &.colapse{
+            span{
+               
+                &:nth-child(1){
+                    margin-top: 18px;
+                    transform: rotate(45deg);
+                    transition: all .5s ease-in-out;
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                    transition: all .3s ease-in-out;
+                }    
+                &:nth-child(3){
+                    margin-left: 6px;
+                    margin-top: -28px;
+                    transform: rotate(-45deg);
+                    transition: all .5s ease-in-out;
+                }
+            }
         }
     }
   }
